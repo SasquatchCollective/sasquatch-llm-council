@@ -42,6 +42,11 @@ def register(server, base_url: str) -> None:
             if settings.get(f"{key}_api_key_set"):
                 configured.append(key)
 
+        custom_name = settings.get("custom_endpoint_name")
+        custom_url = settings.get("custom_endpoint_url")
+        if custom_name or custom_url or settings.get("custom_endpoint_api_key_set"):
+            configured.append(f"custom ({custom_name or custom_url or 'unnamed'})")
+
         return json.dumps({
             "backend": backend_msg,
             "base_url": base_url,
@@ -51,6 +56,11 @@ def register(server, base_url: str) -> None:
             "search_provider": settings.get("search_provider"),
             "configured_providers": configured,
             "ollama_url": settings.get("ollama_base_url"),
+            "custom_endpoint": {
+                "name": custom_name,
+                "url": custom_url,
+                "key_set": bool(settings.get("custom_endpoint_api_key_set")),
+            } if (custom_name or custom_url) else None,
         }, indent=2)
 
     @server.tool(description=(
