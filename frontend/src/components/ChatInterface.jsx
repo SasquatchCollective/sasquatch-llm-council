@@ -74,7 +74,7 @@ export default function ChatInterface({
 
                     {/* Council Preview Grid */}
                     <div className="welcome-grid-container">
-                        <CouncilGrid models={councilModels} chairman={chairmanModel} status="idle" />
+                        <CouncilGrid models={councilModels} chairman={chairmanModel} status="idle" chairmanDisabled={executionMode !== 'full'} />
                     </div>
 
                 </div>
@@ -94,7 +94,7 @@ export default function ChatInterface({
                                 The Council is ready to deliberate. <button className="config-link" onClick={() => onOpenSettings('council')}>Configure it</button>
                             </p>
                             <div className="welcome-grid-container">
-                                <CouncilGrid models={councilModels} chairman={chairmanModel} status="idle" />
+                                <CouncilGrid models={councilModels} chairman={chairmanModel} status="idle" chairmanDisabled={executionMode !== 'full'} />
                             </div>
                         </div>
                     </div>
@@ -149,13 +149,14 @@ export default function ChatInterface({
                                                     )}
                                                 </div>
                                                 <CouncilGrid
-                                                    models={councilModels} // Use the same models list
+                                                    models={councilModels}
                                                     chairman={chairmanModel}
                                                     status={msg.loading?.stage1 ? 'thinking' : 'complete'}
                                                     progress={{
                                                         currentModel: msg.progress?.stage1?.currentModel,
                                                         completed: msg.stage1?.map(r => r.model) || []
                                                     }}
+                                                    showChairman={executionMode === 'full'}
                                                 />
                                             </div>
                                         )}

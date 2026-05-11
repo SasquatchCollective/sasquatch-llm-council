@@ -83,7 +83,9 @@ export default function CouncilGrid({
     models = [],
     chairman = null,
     status = 'idle', // 'idle', 'thinking', 'complete'
-    progress = {}    // { currentModel: 'id', completed: ['id1', 'id2'] }
+    progress = {},    // { currentModel: 'id', completed: ['id1', 'id2'] }
+    showChairman = true,
+    chairmanDisabled = false,
 }) {
     // Filter out empty/null model IDs, then use placeholders if none remain
     const validModels = models.filter(m => m && m.trim() !== '');
@@ -205,35 +207,37 @@ export default function CouncilGrid({
                 );
             })}
 
-            {/* Chairman Card - Always show, but state changes */}
-            <div
-                className={`council-card chairman ${status === 'thinking' ? 'waiting' : 'ready'}`}
-                style={{ '--provider-color': (status !== 'thinking' && chairman) ? getProviderInfo(chairman).color : '#94a3b8' }}
-                onMouseEnter={(e) => status !== 'thinking' && handleMouseEnter(e, chairman || 'Chairman')}
-                onMouseMove={handleMouseMove}
-                onMouseLeave={handleMouseLeave}
-            >
-                <div className="role-badge chairman">Chairman</div>
-                <div className="council-avatar">
-                    {status !== 'thinking' && chairmanInfo && chairmanInfo.logo ? (
-                        <img
-                            src={chairmanInfo.logo}
-                            alt={chairmanInfo.label}
-                            className="provider-logo"
-                        />
-                    ) : (
-                        <span className="avatar-icon">{status === 'thinking' ? '⏳' : (chairmanInfo ? chairmanInfo.icon : '⚖️')}</span>
-                    )}
+            {/* Chairman Card */}
+            {showChairman && (
+                <div
+                    className={`council-card chairman ${status === 'thinking' ? 'waiting' : 'ready'} ${chairmanDisabled ? 'chairman-disabled' : ''}`}
+                    style={{ '--provider-color': (status !== 'thinking' && chairman && !chairmanDisabled) ? getProviderInfo(chairman).color : '#94a3b8' }}
+                    onMouseEnter={(e) => status !== 'thinking' && !chairmanDisabled && handleMouseEnter(e, chairman || 'Chairman')}
+                    onMouseMove={handleMouseMove}
+                    onMouseLeave={handleMouseLeave}
+                >
+                    <div className="role-badge chairman">Chairman</div>
+                    <div className="council-avatar">
+                        {status !== 'thinking' && chairmanInfo && chairmanInfo.logo && !chairmanDisabled ? (
+                            <img
+                                src={chairmanInfo.logo}
+                                alt={chairmanInfo.label}
+                                className="provider-logo"
+                            />
+                        ) : (
+                            <span className="avatar-icon">{status === 'thinking' ? '⏳' : (chairmanDisabled ? '⚖️' : (chairmanInfo ? chairmanInfo.icon : '⚖️'))}</span>
+                        )}
+                    </div>
+                    <div className="council-info">
+                        <span className="model-name">
+                            {status === 'thinking' ? 'Verdict Pending' : chairmanDisabled ? 'Not Active' : (chairman ? getModelDisplayName(chairman) : 'Model')}
+                        </span>
+                        <span className="provider-label">
+                            {status === 'thinking' ? 'Waiting...' : chairmanDisabled ? 'Full Deliberation only' : 'Final Verdict'}
+                        </span>
+                    </div>
                 </div>
-                <div className="council-info">
-                    <span className="model-name">
-                        {status === 'thinking' ? 'Verdict Pending' : (chairman ? getModelDisplayName(chairman) : 'Model')}
-                    </span>
-                    <span className="provider-label">
-                        {status === 'thinking' ? 'Waiting...' : 'Final Verdict'}
-                    </span>
-                </div>
-            </div>
+            )}
         </div>
     );
 }
