@@ -76,6 +76,13 @@ This fixes binary incompatibilities (e.g., `@rollup/rollup-darwin-*` variants).
 | `main.py` | FastAPI app with streaming SSE endpoint |
 | `storage.py` | Conversation persistence in `data/conversations/{id}.json` |
 
+### Tooling (`tools/`)
+
+| Tool | Purpose |
+|------|---------|
+| `build_council_config.py` | Compile a markdown council-config source into the JSON shape consumed by `backend/settings.py`. Stdlib-only; takes positional `INPUT [OUTPUT]` paths — caller supplies the markdown location. Project-agnostic. |
+| `.test-council-config.sh` | Validates `build_council_config.py` against 10 simulated inputs (happy path + 9 failure modes). Inputs are written to a temp dir — no external repos required. Run with `bash tools/.test-council-config.sh` whenever the generator or harness changes. |
+
 ### Frontend (`frontend/src/`)
 
 | Component | Purpose |
