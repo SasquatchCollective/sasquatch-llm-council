@@ -1,6 +1,6 @@
-# LLM Council Plus — MCP Server
+# LLM Council++ — MCP Server
 
-LLM Council Plus exposes a Model Context Protocol (MCP) server that lets AI tools like Claude Code and Gemini CLI send questions directly to your council and retrieve deliberation results — all without opening a browser. Ask your AI assistant to run a full 3-stage deliberation, configure council members, or fetch past conversations, and it talks to the backend on your behalf.
+LLM Council++ exposes a Model Context Protocol (MCP) server that lets AI tools like Claude Code and Gemini CLI send questions directly to your council and retrieve deliberation results — all without opening a browser. Ask your AI assistant to run a full 3-stage deliberation, configure council members, or fetch past conversations, and it talks to the backend on your behalf.
 
 ## Quick Start
 
@@ -32,7 +32,7 @@ If the MCP server is unavailable, the SSE session is stale, or you prefer direct
 ```bash
 mkdir -p ~/.claude/skills/llm-council-api
 curl -o ~/.claude/skills/llm-council-api/SKILL.md \
-  https://raw.githubusercontent.com/jacob-bd/llm-council-plus/main/skills/llm-council-api/SKILL.md
+  https://raw.githubusercontent.com/your-org/llm-council-plus/main/skills/llm-council-api/SKILL.md
 ```
 
 See [`skills/llm-council-api/SKILL.md`](../../skills/llm-council-api/SKILL.md) for the full reference including examples, error handling, and troubleshooting.

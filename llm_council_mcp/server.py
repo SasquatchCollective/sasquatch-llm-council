@@ -1,4 +1,4 @@
-"""MCP server setup for LLM Council Plus."""
+"""MCP server setup for LLM Council++."""
 
 from mcp.server.fastmcp import FastMCP
 
@@ -13,10 +13,10 @@ def create_server(
     host: str = "0.0.0.0",
     port: int = 8002,
 ) -> FastMCP:
-    """Create and configure the LLM Council Plus MCP server.
+    """Create and configure the LLM Council++ MCP server.
 
     Args:
-        base_url: Base URL of the LLM Council Plus backend REST API.
+        base_url: Base URL of the LLM Council++ backend REST API.
         host: Host to bind when running in SSE transport mode.
         port: Port to bind when running in SSE transport mode.
 
@@ -26,7 +26,7 @@ def create_server(
     server = FastMCP(
         name="llm-council-plus",
         instructions=(
-            "LLM Council Plus — a 3-stage multi-LLM deliberation system. "
+            "LLM Council++ — a 3-stage multi-LLM deliberation system. "
             "Use the council tools to run deliberations, inspect conversations, "
             "and check system health."
         ),

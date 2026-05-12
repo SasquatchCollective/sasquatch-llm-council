@@ -1,11 +1,11 @@
 :root {
-  /* --- Council Chamber Theme (refined Midnight Glass) --- */
+  /* --- Sasquatch Collective Theme --- */
 
   /* Backgrounds */
-  --bg-dark: #0c1222;
-  --bg-darker: #060a12;
-  --bg-card: rgba(12, 18, 34, 0.72);
-  --bg-sidebar: rgba(8, 12, 22, 0.92);
+  --bg-dark: #0c1519;
+  --bg-darker: #060d10;
+  --bg-card: rgba(12, 21, 25, 0.72);
+  --bg-sidebar: rgba(6, 13, 16, 0.92);
 
   /* Text */
   --text-primary: #f0f4f8;
@@ -13,13 +13,13 @@
   --text-muted: #5c6b7c;
 
   /* Accents */
-  --accent-primary: #3b82f6;
-  --accent-primary-dim: rgba(59, 130, 246, 0.25);
-  --accent-stage1: #22d3ee;
-  --accent-stage2: #f59e0b;
-  --accent-stage3: #10b981;
-  --accent-chairman: #fbbf24;
-  --accent-chairman-dim: rgba(251, 191, 36, 0.2);
+  --accent-primary: #449983;
+  --accent-primary-dim: rgba(68, 153, 131, 0.25);
+  --accent-stage1: #5ab89e;
+  --accent-stage2: #b8975a;
+  --accent-stage3: #a0c39d;
+  --accent-chairman: #a0c39d;
+  --accent-chairman-dim: rgba(160, 195, 157, 0.2);
 
   /* Borders */
   --border-color: rgba(148, 163, 184, 0.08);
@@ -33,7 +33,7 @@
 
   /* Shadows & glow */
   --shadow-glass: 0 12px 40px rgba(0, 0, 0, 0.35);
-  --shadow-glow-blue: 0 0 24px rgba(59, 130, 246, 0.2), 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-glow-teal: 0 0 24px rgba(68, 153, 131, 0.2), 0 4px 12px rgba(0, 0, 0, 0.15);
   --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -44,9 +44,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg-darker);
   background-image:
-    radial-gradient(ellipse 120% 80% at 50% -20%, rgba(59, 130, 246, 0.12) 0%, transparent 50%),
-    radial-gradient(ellipse 80% 50% at 100% 50%, rgba(34, 211, 238, 0.06) 0%, transparent 45%),
-    linear-gradient(180deg, #0c1222 0%, #0f172a 40%, #0a0f1a 100%);
+    radial-gradient(ellipse 120% 80% at 50% -20%, rgba(68, 153, 131, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse 80% 50% at 100% 50%, rgba(48, 104, 119, 0.06) 0%, transparent 45%),
+    linear-gradient(180deg, #0c1519 0%, #0d1820 40%, #080e13 100%);
   background-attachment: fixed;
   color: var(--text-primary);
   height: 100vh;
@@ -157,7 +157,7 @@ body::after {
   padding-left: 1em;
   font-style: italic;
   color: var(--text-secondary);
-  background: rgba(59, 130, 246, 0.05);
+  background: rgba(68, 153, 131, 0.05);
   padding: 12px 16px;
   border-radius: 0 8px 8px 0;
 }

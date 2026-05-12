@@ -8,7 +8,7 @@ If you want to run the MCP server locally and point it at a remote backend, see 
 
 ## Prerequisites
 
-- LLM Council Plus running in a container (see [docs/DOCKER.md](../DOCKER.md))
+- LLM Council++ running in a container (see [docs/DOCKER.md](../DOCKER.md))
 - Port 8002 accessible from your client machine (or via VPN/reverse proxy)
 
 ---

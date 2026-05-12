@@ -1,6 +1,6 @@
 # MCP Usage Examples
 
-These walkthroughs show real interactions between a user, their AI assistant, and the LLM Council Plus MCP server. All examples assume the MCP server is registered and the backend is running.
+These walkthroughs show real interactions between a user, their AI assistant, and the LLM Council++ MCP server. All examples assume the MCP server is registered and the backend is running.
 
 ---
 

@@ -58,7 +58,7 @@ export default function PromptSettings({
                         <label>Stage 2: Peer Ranking</label>
 
                         {/* Stage 2 Temperature Slider - Positioned prominently */}
-                        <div className="stage2-heat-section" style={{ marginTop: '12px', marginBottom: '16px', padding: '15px', background: 'rgba(59, 130, 246, 0.1)', borderRadius: '8px', border: '1px solid rgba(59, 130, 246, 0.2)' }}>
+                        <div className="stage2-heat-section" style={{ marginTop: '12px', marginBottom: '16px', padding: '15px', background: 'rgba(68, 153, 131, 0.1)', borderRadius: '8px', border: '1px solid rgba(68, 153, 131, 0.2)' }}>
                             <div className="heat-slider-header">
                                 <h4 style={{ margin: 0, fontSize: '14px', color: '#e2e8f0' }}>Stage 2 Heat</h4>
                                 <span className="heat-value">{stage2Temperature.toFixed(1)}</span>

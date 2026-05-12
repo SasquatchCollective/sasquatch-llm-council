@@ -1,1 +1,1 @@
-"""MCP tool modules for LLM Council Plus."""
+"""MCP tool modules for LLM Council++."""

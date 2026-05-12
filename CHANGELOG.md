@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to LLM Council Plus will be documented in this file.
+All notable changes to LLM Council++ will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -52,7 +52,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.3.0] - 2026-05-10
 
 ### Added
-- **MCP server** (`llm_council_mcp/`): Expose LLM Council Plus as a Model Context Protocol server, letting Claude Code, Gemini CLI, and other MCP clients send questions to the council and retrieve deliberation results programmatically
+- **MCP server** (`llm_council_mcp/`): Expose LLM Council++ as a Model Context Protocol server, letting Claude Code, Gemini CLI, and other MCP clients send questions to the council and retrieve deliberation results programmatically
 - **13 MCP tools**: `list_models`, `get_council_config`, `configure_council`, `set_search_provider`, `run_stage1`, `run_stage2`, `run_stage3`, `run_deliberation`, `quick_chat`, `list_conversations`, `get_conversation`, `check_health`, `test_provider`
 - **stdio transport** (default): MCP server runs as a local process; AI tools communicate via stdin/stdout with outbound HTTP to the Council backend (local or remote)
 - **SSE transport**: MCP server runs as an HTTP server on port 8002; AI tools connect via URL with no local installation required

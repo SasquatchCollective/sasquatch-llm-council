@@ -1,6 +1,6 @@
 # Quick Start Guide
 
-Get LLM Council Plus running in under 5 minutes.
+Get LLM Council++ running in under 5 minutes.
 
 ---
 
@@ -16,7 +16,7 @@ Get LLM Council Plus running in under 5 minutes.
 
 ```bash
 # Clone the repo
-git clone https://github.com/jacob-bd/llm-council-plus.git
+git clone https://github.com/your-org/llm-council-plus.git
 cd llm-council-plus
 
 # Install dependencies

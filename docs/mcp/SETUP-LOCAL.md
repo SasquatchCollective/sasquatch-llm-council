@@ -9,7 +9,7 @@ If you want zero local installation, see [SETUP-REMOTE.md](SETUP-REMOTE.md) inst
 ## Prerequisites
 
 - **Python 3.10+** — check with `python --version` or `python3 --version`
-- **LLM Council Plus backend running** — local at `http://localhost:8001`, or accessible at a remote URL
+- **LLM Council++ backend running** — local at `http://localhost:8001`, or accessible at a remote URL
 
 ---
 

@@ -30,8 +30,8 @@
 }
 
 .tab.active {
-  background: rgba(59, 130, 246, 0.12);
-  border-color: rgba(59, 130, 246, 0.35);
+  background: rgba(68, 153, 131, 0.12);
+  border-color: rgba(68, 153, 131, 0.35);
   color: var(--text-primary);
   box-shadow: var(--shadow-soft);
 }

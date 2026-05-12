@@ -137,7 +137,7 @@ export default function SearchSettings({
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     className="api-key-link"
-                                    style={{ marginTop: '8px', display: 'inline-block', fontSize: '12px', color: '#60a5fa' }}
+                                    style={{ marginTop: '8px', display: 'inline-block', fontSize: '12px', color: '#5ab89e' }}
                                 >
                                     Get API key at serper.dev →
                                 </a>
@@ -244,14 +244,14 @@ export default function SearchSettings({
                                     </div>
                                 )}
                                 <div className="rate-limit-notice" style={{ marginTop: '8px', fontSize: '12px', color: '#94a3b8' }}>
-                                    ⚠ Free tier: 5 searches/min. Upgrade at <a href="https://agent.tinyfish.ai" target="_blank" rel="noopener noreferrer" style={{ color: '#60a5fa' }}>agent.tinyfish.ai</a> for higher limits.
+                                    ⚠ Free tier: 5 searches/min. Upgrade at <a href="https://agent.tinyfish.ai" target="_blank" rel="noopener noreferrer" style={{ color: '#5ab89e' }}>agent.tinyfish.ai</a> for higher limits.
                                 </div>
                                 <a
                                     href="https://agent.tinyfish.ai/api-keys"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="api-key-link"
-                                    style={{ marginTop: '8px', display: 'inline-block', fontSize: '12px', color: '#60a5fa' }}
+                                    style={{ marginTop: '8px', display: 'inline-block', fontSize: '12px', color: '#5ab89e' }}
                                 >
                                     Get free API key at agent.tinyfish.ai →
                                 </a>

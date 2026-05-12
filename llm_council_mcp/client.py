@@ -1,4 +1,4 @@
-"""HTTP client for LLM Council Plus backend."""
+"""HTTP client for LLM Council++ backend."""
 
 from __future__ import annotations
 
@@ -11,7 +11,7 @@ import httpx
 
 
 class CouncilClient:
-    """Async HTTP client for the LLM Council Plus REST API."""
+    """Async HTTP client for the LLM Council++ REST API."""
 
     def __init__(self, base_url: str = "http://localhost:8001", timeout: float = 180.0):
         self.base_url = base_url.rstrip("/")

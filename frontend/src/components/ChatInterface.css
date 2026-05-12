@@ -25,11 +25,13 @@
   letter-spacing: -0.03em;
 }
 
-.empty-state .plus-text {
-  background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 800;
+.welcome-logo {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+  opacity: 0;
+  animation: hero-fade-in 0.6s ease forwards;
 }
 
 .empty-state p {
@@ -101,7 +103,7 @@
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #60a5fa 0%, #22d3ee 100%);
+  background: linear-gradient(135deg, #5ab89e 0%, #5ab89e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -219,8 +221,8 @@
 
 /* User Message Styling */
 .message.user .message-content {
-  background: rgba(59, 130, 246, 0.1);
-  border: 1px solid rgba(59, 130, 246, 0.2);
+  background: rgba(68, 153, 131, 0.1);
+  border: 1px solid rgba(68, 153, 131, 0.2);
   color: var(--text-primary);
   backdrop-filter: blur(8px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -274,11 +276,11 @@
 /* Legacy input-container removed */
 
 .input-container:focus-within {
-  border-color: rgba(59, 130, 246, 0.5);
+  border-color: rgba(68, 153, 131, 0.5);
   box-shadow:
     var(--shadow-glass),
-    0 0 0 1px rgba(59, 130, 246, 0.35),
-    0 0 32px rgba(59, 130, 246, 0.15);
+    0 0 0 1px rgba(68, 153, 131, 0.35),
+    0 0 32px rgba(68, 153, 131, 0.15);
 }
 
 .message-input {
@@ -305,7 +307,7 @@
 }
 
 .send-button {
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  background: linear-gradient(135deg, #449983 0%, #367d6a 100%);
   color: white;
   border: none;
   border-radius: 50%;
@@ -317,12 +319,12 @@
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   margin-bottom: 6px;
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.35);
+  box-shadow: 0 4px 12px rgba(68, 153, 131, 0.35);
 }
 
 .send-button:hover:not(:disabled) {
   transform: scale(1.06);
-  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.45);
+  box-shadow: 0 6px 20px rgba(68, 153, 131, 0.45);
 }
 
 .send-button:disabled {
@@ -363,9 +365,9 @@
 }
 
 .search-toggle.active {
-  background: rgba(6, 182, 212, 0.2);
-  border-color: rgba(6, 182, 212, 0.4);
-  box-shadow: 0 0 12px rgba(6, 182, 212, 0.4);
+  background: rgba(68, 153, 131, 0.2);
+  border-color: rgba(68, 153, 131, 0.4);
+  box-shadow: 0 0 12px rgba(68, 153, 131, 0.4);
   opacity: 1;
 }
 
@@ -488,11 +490,11 @@
   align-items: center;
   gap: 12px;
   padding: 16px 20px;
-  background: rgba(59, 130, 246, 0.1);
-  border: 1px solid rgba(59, 130, 246, 0.2);
+  background: rgba(68, 153, 131, 0.1);
+  border: 1px solid rgba(68, 153, 131, 0.2);
   border-radius: 12px;
   margin-bottom: 16px;
-  color: #93c5fd;
+  color: #7ecdb5;
   font-size: 14px;
   font-weight: 500;
 }
@@ -500,8 +502,8 @@
 .spinner {
   width: 20px;
   height: 20px;
-  border: 2px solid rgba(59, 130, 246, 0.3);
-  border-top-color: #3b82f6;
+  border: 2px solid rgba(68, 153, 131, 0.3);
+  border-top-color: #449983;
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
@@ -539,7 +541,7 @@
 .config-link {
   background: none;
   border: none;
-  color: #60a5fa;
+  color: #5ab89e;
   font-size: 14px;
   text-decoration: underline;
   cursor: pointer;
@@ -548,7 +550,7 @@
 }
 
 .config-link:hover {
-  color: #93c5fd;
+  color: #7ecdb5;
 }
 
 .config-separator {

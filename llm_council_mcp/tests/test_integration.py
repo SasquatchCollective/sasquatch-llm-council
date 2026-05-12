@@ -1,4 +1,4 @@
-"""End-to-end integration tests for the LLM Council Plus MCP server.
+"""End-to-end integration tests for the LLM Council++ MCP server.
 
 These tests verify complete workflows: MCP tool → CouncilClient → SSE stream buffer → result.
 All HTTP calls are mocked via respx.

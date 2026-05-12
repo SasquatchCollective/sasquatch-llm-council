@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-LLM Council Plus is a 3-stage deliberation system where multiple LLMs collaboratively answer user questions through:
+LLM Council++ is a 3-stage deliberation system where multiple LLMs collaboratively answer user questions through:
 1. **Stage 1**: Individual model responses (with optional web search context)
 2. **Stage 2**: Anonymous peer review/ranking to prevent bias
 3. **Stage 3**: Chairman synthesis of collective wisdom

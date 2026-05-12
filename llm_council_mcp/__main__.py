@@ -1,4 +1,4 @@
-"""Entry point for the LLM Council Plus MCP server."""
+"""Entry point for the LLM Council++ MCP server."""
 
 import argparse
 import asyncio
@@ -9,7 +9,7 @@ from .server import create_server, run_stdio, run_sse
 
 def main():
     parser = argparse.ArgumentParser(
-        description="LLM Council Plus MCP Server",
+        description="LLM Council++ MCP Server",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
@@ -26,7 +26,7 @@ Examples:
     parser.add_argument(
         "--base-url",
         default="http://localhost:8001",
-        help="Base URL of the LLM Council Plus backend (default: http://localhost:8001)",
+        help="Base URL of the LLM Council++ backend (default: http://localhost:8001)",
     )
     parser.add_argument(
         "--transport",

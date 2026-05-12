@@ -33,9 +33,9 @@
 }
 
 .mode-option.active {
-    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    background: linear-gradient(135deg, #449983 0%, #367d6a 100%);
     color: white;
-    box-shadow: 0 2px 12px rgba(59, 130, 246, 0.35);
+    box-shadow: 0 2px 12px rgba(68, 153, 131, 0.35);
     transform: translateY(-0.5px);
 }
 

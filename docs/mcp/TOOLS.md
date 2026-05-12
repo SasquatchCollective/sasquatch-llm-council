@@ -1,6 +1,6 @@
 # MCP Tools Reference
 
-The LLM Council Plus MCP server exposes 14 tools grouped into four categories. Your AI assistant calls these automatically based on what you ask it to do — you rarely need to specify a tool name directly.
+The LLM Council++ MCP server exposes 14 tools grouped into four categories. Your AI assistant calls these automatically based on what you ask it to do — you rarely need to specify a tool name directly.
 
 ---
 

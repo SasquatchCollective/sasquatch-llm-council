@@ -1,5 +1,7 @@
 # LLM Council++
 
+![LLM Council++](header.png)
+
 A 3-stage deliberation system where multiple LLMs collaboratively answer questions through independent response, anonymous peer review, and chairman synthesis.
 
 ---

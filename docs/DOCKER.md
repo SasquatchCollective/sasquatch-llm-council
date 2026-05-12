@@ -1,13 +1,13 @@
 # Docker Deployment
 
-This guide covers running LLM Council Plus as a single Docker container — suitable for home servers, VPS instances, and any environment where you want a persistent, auto-restarting deployment.
+This guide covers running LLM Council++ as a single Docker container — suitable for home servers, VPS instances, and any environment where you want a persistent, auto-restarting deployment.
 
 ---
 
 ## Quick Start
 
 ```bash
-git clone https://github.com/jacob-bd/llm-council-plus.git
+git clone https://github.com/your-org/llm-council-plus.git
 cd llm-council-plus
 docker compose up -d --build
 ```

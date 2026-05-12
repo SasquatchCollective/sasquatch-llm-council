@@ -67,7 +67,8 @@ export default function ChatInterface({
         return (
             <div className="chat-interface">
                 <div className="empty-state">
-                    <h1>Welcome to LLM Council <span className="plus-text">Plus</span></h1>
+                    <h1>Welcome to LLM Council<span className="title-plus">++</span></h1>
+                    <img src="/header.png" alt="LLM Council++" className="welcome-logo" />
                     <p className="hero-message">
                         The Council is ready to deliberate. <button className="config-link" onClick={() => onOpenSettings('council')}>Configure it</button>
                     </p>
@@ -89,7 +90,8 @@ export default function ChatInterface({
                 {(!conversation || conversation.messages.length === 0) ? (
                     <div className="hero-container">
                         <div className="hero-content">
-                            <h1>Welcome to LLM Council <span className="text-gradient">Plus</span></h1>
+                            <h1>Welcome to LLM Council<span className="text-gradient">++</span></h1>
+                            <img src="/header.png" alt="LLM Council++" className="welcome-logo" />
                             <p className="hero-subtitle">
                                 The Council is ready to deliberate. <button className="config-link" onClick={() => onOpenSettings('council')}>Configure it</button>
                             </p>

@@ -1,14 +1,14 @@
 ---
 name: llm-council-api
 version: 0.4.1
-description: Use when interacting with LLM Council Plus via HTTP API — configuring the council, running deliberations, listing models, or managing conversations — especially when the MCP server is unavailable, connection is stale, or direct REST access is preferred. Triggers on requests like "ask the council", "configure models", "run a deliberation", "check council health", or any manipulation of the LLM Council Plus system.
+description: Use when interacting with LLM Council++ via HTTP API — configuring the council, running deliberations, listing models, or managing conversations — especially when the MCP server is unavailable, connection is stale, or direct REST access is preferred. Triggers on requests like "ask the council", "configure models", "run a deliberation", "check council health", or any manipulation of the LLM Council++ system.
 ---
 
-# LLM Council Plus — HTTP API Skill
+# LLM Council++ — HTTP API Skill
 
 ## Overview
 
-LLM Council Plus is a 3-stage multi-LLM deliberation system. This skill lets you control it entirely via its REST API — no MCP required. Use it when MCP is unavailable, the SSE session is stale, or you prefer direct API access.
+LLM Council++ is a 3-stage multi-LLM deliberation system. This skill lets you control it entirely via its REST API — no MCP required. Use it when MCP is unavailable, the SSE session is stale, or you prefer direct API access.
 
 **Default base URL:** `http://localhost:8001`  
 **Remote server:** replace with `http://<server-ip>:8001`
@@ -524,7 +524,7 @@ The council continues with successful models even if some fail.
 
 **Option 1: Clone and symlink**
 ```bash
-git clone https://github.com/jacob-bd/llm-council-plus.git
+git clone https://github.com/your-org/llm-council-plus.git
 mkdir -p ~/.claude/skills
 ln -s "$(pwd)/llm-council-plus/skills/llm-council-api" ~/.claude/skills/llm-council-api
 ```
@@ -533,7 +533,7 @@ ln -s "$(pwd)/llm-council-plus/skills/llm-council-api" ~/.claude/skills/llm-coun
 ```bash
 mkdir -p ~/.claude/skills/llm-council-api
 curl -o ~/.claude/skills/llm-council-api/SKILL.md \
-  https://raw.githubusercontent.com/jacob-bd/llm-council-plus/main/skills/llm-council-api/SKILL.md
+  https://raw.githubusercontent.com/your-org/llm-council-plus/main/skills/llm-council-api/SKILL.md
 ```
 
 After installation, Claude Code automatically discovers and loads the skill when you ask about council operations.

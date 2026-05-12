@@ -13,7 +13,7 @@ def register(server, base_url: str) -> None:
     """Register health and testing tools on the MCP server."""
 
     @server.tool(description=(
-        "Check if the LLM Council Plus backend is reachable and which providers are configured. "
+        "Check if the LLM Council++ backend is reachable and which providers are configured. "
         "Returns backend status and a summary of configured API keys and features."
     ))
     async def check_health() -> str:

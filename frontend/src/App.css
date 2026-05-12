@@ -29,8 +29,8 @@
 }
 
 .mobile-menu-btn:hover {
-  background: rgba(59, 130, 246, 0.2);
-  box-shadow: 0 0 12px rgba(59, 130, 246, 0.3);
+  background: rgba(68, 153, 131, 0.2);
+  box-shadow: 0 0 12px rgba(68, 153, 131, 0.3);
 }
 
 .hamburger-icon {
@@ -114,7 +114,7 @@
   color: var(--text-primary);
 }
 .sidebar-nav-item.active {
-  background: rgba(59, 130, 246, 0.15);
+  background: rgba(68, 153, 131, 0.15);
   color: var(--accent-primary);
 }
 
@@ -157,7 +157,7 @@
   background: rgba(255, 255, 255, 0.03);
 }
 .provider-option-container.selected {
-  background: rgba(59, 130, 246, 0.1);
+  background: rgba(68, 153, 131, 0.1);
   border-color: var(--accent-primary);
   box-shadow: none;
 }

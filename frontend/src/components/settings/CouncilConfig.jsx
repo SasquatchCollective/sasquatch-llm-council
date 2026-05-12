@@ -390,7 +390,7 @@ export default function CouncilConfig({
                             <button
                                 type="button"
                                 onClick={() => { setActiveSection('prompts'); setActivePromptTab('stage2'); }}
-                                style={{ background: 'none', border: 'none', color: '#3b82f6', cursor: 'pointer', textDecoration: 'underline', padding: 0, fontSize: '11px' }}
+                                style={{ background: 'none', border: 'none', color: '#449983', cursor: 'pointer', textDecoration: 'underline', padding: 0, fontSize: '11px' }}
                             >
                                 Configure in System Prompts → Stage 2
                             </button>

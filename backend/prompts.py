@@ -1,4 +1,4 @@
-"""Default system prompts for the LLM Council Plus."""
+"""Default system prompts for the LLM Council++."""
 
 STAGE1_PROMPT_DEFAULT = """You are a helpful AI assistant.
 {search_context_block}

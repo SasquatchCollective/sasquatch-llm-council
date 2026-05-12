@@ -16,7 +16,7 @@ from .council import generate_conversation_title, generate_search_query, stage1_
 from .search import perform_web_search, SearchProvider
 from .settings import get_settings, save_settings, update_settings, Settings, DEFAULT_COUNCIL_MODELS, DEFAULT_CHAIRMAN_MODEL, AVAILABLE_MODELS
 
-app = FastAPI(title="LLM Council Plus API")
+app = FastAPI(title="LLM Council++ API")
 
 FRONTEND_DIST_DIR = os.getenv(
     "FRONTEND_DIST_DIR",

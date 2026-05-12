@@ -1,7 +1,7 @@
 [project]
 name = "llm-council-plus"
 version = "0.4.0"
-description = "LLM Council Plus - Your Advanced AI Council"
+description = "LLM Council++ - Multi-LLM Deliberation System"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [

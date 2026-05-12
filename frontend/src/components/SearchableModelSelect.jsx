@@ -85,12 +85,12 @@ export default function SearchableModelSelect({
     control: (base, state) => ({
       ...base,
       backgroundColor: 'rgba(30, 41, 59, 0.8)',
-      borderColor: state.isFocused ? '#3b82f6' : 'rgba(148, 163, 184, 0.2)',
+      borderColor: state.isFocused ? '#449983' : 'rgba(148, 163, 184, 0.2)',
       borderRadius: '8px',
       minHeight: '38px',
-      boxShadow: state.isFocused ? '0 0 0 2px rgba(59, 130, 246, 0.3)' : 'none',
+      boxShadow: state.isFocused ? '0 0 0 2px rgba(68, 153, 131, 0.3)' : 'none',
       '&:hover': {
-        borderColor: '#3b82f6',
+        borderColor: '#449983',
       },
     }),
     menu: (base) => ({
@@ -124,9 +124,9 @@ export default function SearchableModelSelect({
     option: (base, state) => ({
       ...base,
       backgroundColor: state.isSelected
-        ? 'rgba(59, 130, 246, 0.3)'
+        ? 'rgba(68, 153, 131, 0.3)'
         : state.isFocused
-          ? 'rgba(59, 130, 246, 0.15)'
+          ? 'rgba(68, 153, 131, 0.15)'
           : 'transparent',
       color: state.isSelected ? '#ffffff' : '#e2e8f0',
       padding: '8px 12px',
@@ -134,7 +134,7 @@ export default function SearchableModelSelect({
       cursor: 'pointer',
       fontSize: '13px',
       '&:active': {
-        backgroundColor: 'rgba(59, 130, 246, 0.4)',
+        backgroundColor: 'rgba(68, 153, 131, 0.4)',
       },
     }),
     singleValue: (base) => ({
